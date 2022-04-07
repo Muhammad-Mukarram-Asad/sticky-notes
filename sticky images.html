@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Images</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #505256;
+        }
+
+        nav {
+            width: 650px;
+            height: 80px;
+            background-color: #87898C;
+            border: 10px solid #87898C;
+            border-radius: 10px;
+            margin: 10px auto;
+        }
+
+        nav ul {
+            display: flex;
+            flex: 10;
+        }
+
+        nav ul li {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        #nav-left {
+            margin: 6px 10px;
+        }
+
+        .nav-center {
+            margin-top: 15px;
+            margin-left: 10px;
+            margin-right: 8px;
+        }
+
+        .nav-center-1 {
+            margin-top: 5px;
+        }
+
+        .nav-center-2 {
+            margin-top: 18px;
+            margin-left: 2px;
+            margin-right: 19px;
+        }
+
+        #btn-1 {
+            color: white;
+            background-color: #5284BE;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-size: 20px;
+            margin-left: 80px;
+        }
+
+        #btn-2 {
+            color: white;
+            background-color: #3B88D8;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            border-radius: 1px;
+            margin-top: 10px;
+            font-size: 20px;
+            margin-left: 3px;
+        }
+        .row-1, .row-2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .box-1 {
+            width: 350px;
+            height: 350px;
+            background-color: red;
+            color: black;
+            position: relative;
+            border: 5px solid white;
+            margin: 25px 20px;
+        }
+
+        .box-1 h1 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .box-1 p {
+            text-align: left;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+
+        .abs-image {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            margin-left: 270px;
+            margin-top: -75px;
+        }
+
+        .abs-image-1 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            margin-left: 120px;
+            margin-top: -105px;
+        }
+        .box-1.part-2{
+            background-color: #809DF8;
+        }
+        .box-1.part-3{
+            background-color: #1D6AA1;
+        }
+        .box-1.part-5{
+            background-color: #411B9E;
+        }
+
+        .box-1.part-6{
+            background-color: #FE9F3E;
+        }
+
+        .box-1.part-7{
+            background-color: #FE9F3E;
+        }
+        .box-1.part-8{
+            background-color: #FEA4A4;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id="nav-left">
+                <h1>HTML5Sticky</h1>
+                <h4>Sticky notes for web !</h4>
+            </li>
+            <li class="nav-center-1"> <img
+                    src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/plus-256.png" width="60px"
+                    height="60px"> </li>
+            <li class="nav-center-2"> <img
+                    src="https://cdn2.iconfinder.com/data/icons/pointed-edge-web-navigation/101/cross-red-256.png"
+                    width="30px" height="30px"></li>
+            <li class="nav-center"> <img
+                    src="https://cdn0.iconfinder.com/data/icons/freelancer-2/512/data-research-document-freelance-256.png"
+                    width="30px" height="30px"></li>
+            <li class="nav-center"> <img
+                    src="https://cdn0.iconfinder.com/data/icons/freelancer-2/512/data-research-document-freelance-256.png"
+                    width="30px" height="30px"></li>
+            <li><button id="btn-1">t</button></li>
+            <li><button id="btn-2"> $Donate </button> </li>
+        </ul>
+    </nav>
+
+    <div class="row-1">
+        <div class="box-1">
+            <h1>3/18/2020 12:40 PM</h1>
+            <p>Text Here...</p>
+            <img class="abs-image"
+                src="https://cdn1.iconfinder.com/data/icons/interface-50/24/ui_interface_user_user_interface_mark_x_check-256.png"
+                alt="">
+            <img class="abs-image-1" src="https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Tack-256.png" alt="">
+        </div>
+
+        <div class="box-1 part-2">
+            <h1>3/18/2020 12:40 PM</h1>
+            <p>Text Here...</p>
+            <img class="abs-image"
+                src="https://cdn1.iconfinder.com/data/icons/interface-50/24/ui_interface_user_user_interface_mark_x_check-256.png"
+                alt="">
+            <img class="abs-image-1" src="https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Tack-256.png" alt="">
+        </div>
+
+        <div class="box-1 part-3">
+            <h1>3/18/2020 12:40 PM</h1>
+            <p>Text Here...</p>
+            <img class="abs-image"
+                src="https://cdn1.iconfinder.com/data/icons/interface-50/24/ui_interface_user_user_interface_mark_x_check-256.png"
+                alt="">
+            <img class="abs-image-1" src="https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Tack-256.png" alt="">
+        </div>
+
+        <div class="box-1 part-4">
+            <h1>3/18/2020 12:40 PM</h1>
+            <p>Text Here...</p>
+            <img class="abs-image"
+                src="https://cdn1.iconfinder.com/data/icons/interface-50/24/ui_interface_user_user_interface_mark_x_check-256.png"
+                alt="">
+            <img class="abs-image-1" src="https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Tack-256.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="row-2">
+        <div class="box-1 part-5">
+            <h1>3/18/2020 12:40 PM</h1>
+            <p>Text Here...</p>
+            <img class="abs-image"
+                src="https://cdn1.iconfinder.com/data/icons/interface-50/24/ui_interface_user_user_interface_mark_x_check-256.png"
+                alt="">
+            <img class="abs-image-1" src="https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Tack-256.png" alt="">
+        </div>
+
+        <div class="box-1 part-6">
+            <h1>3/18/2020 12:40 PM</h1>
+            <p>Text Here...</p>
+            <img class="abs-image"
+                src="https://cdn1.iconfinder.com/data/icons/interface-50/24/ui_interface_user_user_interface_mark_x_check-256.png"
+                alt="">
+            <img class="abs-image-1" src="https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Tack-256.png" alt="">
+        </div>
+
+        <div class="box-1 part-7">
+            <h1>3/18/2020 12:40 PM</h1>
+            <p>Text Here...</p>
+            <img class="abs-image"
+                src="https://cdn1.iconfinder.com/data/icons/interface-50/24/ui_interface_user_user_interface_mark_x_check-256.png"
+                alt="">
+            <img class="abs-image-1" src="https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Tack-256.png" alt="">
+        </div>
+
+        <div class="box-1 part-8">
+            <h1>3/18/2020 12:40 PM</h1>
+            <p>Text Here...</p>
+            <img class="abs-image"
+                src="https://cdn1.iconfinder.com/data/icons/interface-50/24/ui_interface_user_user_interface_mark_x_check-256.png"
+                alt="">
+            <img class="abs-image-1" src="https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/Tack-256.png" alt="">
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
